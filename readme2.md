@@ -213,13 +213,19 @@
     ## ✅IV. -How to receive data/info's from the Search Bar
               -How to use the text from Input Text
 
->
+> To receive data/fetch data we will use 'axios'. Terminal: 'npm install axios', we laso can use the 'fetch' method wich is given by default from React, but 'axios' is much easyer
 
-[SRC/COMPONENTS/SearchBar.js]/[SRC/SCREENS/SearchScreen.js]
+[SRC/COMPONENTS/SearchBar.js]/[SRC/SCREENS/SearchScreen.js]/[SRC/API/Yelp.js]
 
                                                                     ❗❗❗ 🔤🔤[RECEVEING DATA]🔤🔤 ❗❗❗
 
-    ## ✅V. subtitlu
+    ## ✅V. -How to handle Erros
+             -Handling Errors
+             -How to catch Error messages and display them on the screen
+
+[SRC/SCREENS/SearchScreen.js]/[SRC/HOOKS/useResults.js]
+
+                                                                    ❗❗❗ 🌋🌋[HANDLING ERRORS]🌋🌋 ❗❗❗
 
     ## ✅VI. subtitlu
 

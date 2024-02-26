@@ -6,7 +6,7 @@ import ResultsList from "../components/ResultsList";
 
 const SearchScreen = () => {
   const [term, setTerm] = useState(""); //🔤🔤[RECEVEING DATA]🔤🔤 taking data from the Search Input Text
-  const [searchApi, results, errorMessage] = useResults();
+  const [searchApi, results, errorMessage] = useResults(); //🔤🔤[RECEVEING DATA]🔤🔤 Receveing data from the Input Text
 
   const filterResultsByPrice = (price) => {
     // price === '$' || '$$' || '$$$'
@@ -26,6 +26,7 @@ const SearchScreen = () => {
       {/* 🔤🔤[RECEVEING DATA]🔤🔤 connecting the Search Bar with the data receveid from the Input Text --- ❗❗❗ Now we can pass those States 'term, onTermChange and onTermSubmit' as PROPS to our 'SearchBar.js' file */}
       {/* 🔍🔍[SEARCH BAR]🔍🔍 placing the SearchBar component */}
       {errorMessage ? <Text>{errorMessage}</Text> : null}
+      {/* 🌋🌋[HANDLING ERRORS]🌋🌋 here we are implementing the Error message if is true or false  */}
       <ScrollView>
         <ResultsList
           results={filterResultsByPrice("$")}
