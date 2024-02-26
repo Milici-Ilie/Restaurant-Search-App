@@ -170,27 +170,34 @@
 # 2. -Restaurant Search App: Find on GitHub: 'Restaurant Search App'
 
     ## ✅I. -How to install projects in React Native
+             -How to install React Navigation/Native
 
 > Terminal: 'npx create-expo-app food-rn6' === NOTE❗❗❗ 'food-rn6' at the end is just the name of our App, the command itself is 'npx create-expo-app'
+> NREACT NAVIGATION gives the possibility to navigate between multiple pages
 
 <>
 <<<Install React Navigation v6 dependencies>>>
 
-> npm install @react-navigation/native
+> > > > > > > > > > > > npm install @react-navigation/native
 
-> npx expo install react-native-screens react-native-safe-area-context
+> > > > > > > > > > > > npx expo install react-native-screens react-native-safe-area-context
 
-> npm install @react-navigation/stack
+> > > > > > > > > > > > npm install @react-navigation/stack
 
-> npx expo install react-native-gesture-handler
+> > > > > > > > > > > > npx expo install react-native-gesture-handler
 
 <<<Install project dependencies:
 
-npm install axios
-<>
-❗❗❗ 🍴🍴[RESTAURANT APP]🍴🍴 ❗❗❗
+> > > > > > > > > > > > npm install axios
+> > > > > > > > > > > > <>
 
-    ## ✅II. subtitlu
+                                                                    ❗❗❗ 🍴🍴[RESTAURANT APP]🍴🍴 ❗❗❗
+
+    ## ✅II. -Assembling a Navigator
+
+[App.js]/[SRC/SCREEN/SearchScreen.js]
+
+                                                                    ❗❗❗ 🍴🍴[Navigator]🍴🍴 ❗❗❗
 
     ## ✅III. subtitlu
 

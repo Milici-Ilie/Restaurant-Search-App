@@ -1,5 +1,5 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native"; //🍴🍴[Navigator]🍴🍴
+import { createStackNavigator } from "@react-navigation/stack"; //🍴🍴[Navigator]🍴🍴
 
 import SearchScreen from "./src/screens/SearchScreen";
 import ResultsShowScreen from "./src/screens/ResultsShowScreen";
