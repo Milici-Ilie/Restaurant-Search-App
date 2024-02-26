@@ -199,9 +199,25 @@
 
                                                                     ❗❗❗ 🍴🍴[Navigator]🍴🍴 ❗❗❗
 
-    ## ✅III. subtitlu
+    ## ✅III. -Creating the SearchBar
+               -How to implement React Native Icons
+               -How to import expo/vector-icons
 
-    ## ✅IV. subtitlu
+> Go to the link: 'https://docs.expo.dev/guides/icons/' === 'https://icons.expo.fyi/Index/AntDesign/stepforward'
+> Installing the Expo Vector Icons: 'npx create-expo-app'
+
+[SRC/SCREENS/SearchScreen.js]/[SRC/COMPONENTS/SearchBar.js]
+
+                                                                    ❗❗❗ 🔍🔍[SEARCH BAR]🔍🔍 ❗❗❗
+
+    ## ✅IV. -How to receive data/info's from the Search Bar
+              -How to use the text from Input Text
+
+>
+
+[SRC/COMPONENTS/SearchBar.js]/[SRC/SCREENS/SearchScreen.js]
+
+                                                                    ❗❗❗ 🔤🔤[RECEVEING DATA]🔤🔤 ❗❗❗
 
     ## ✅V. subtitlu
 
