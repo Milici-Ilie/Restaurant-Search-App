@@ -265,7 +265,18 @@
 
                                                                 ❗❗❗ 🍧🍧[DISPLAYING IMAGES]🍧🍧 ❗❗❗
 
-    ## ✅X. subtitlu
+    ## ✅X. -Reminder on Navigation
+             -Navigating from a Child Component
+             -How to display another page related when the User select some content
+             -How to connect related info page with primary page
+             -Pressing some IMG (for exemple) will display automatically another content related with that IMG
+             -Showing some info's related with the content that we press and upload it from the API
+
+> How to dettect what content the User pressed to know wich info's to upload when is need it
+
+[SRC/SCREENS/ResultsShowScreen.js]/[SRC/SCREENS/SearchScreen.js]/[SRC/COMPONENTS/ResultsList.js]
+
+                                                                ❗❗❗ 🦟🦟[RELATED CONTENTS]🦟🦟 ❗❗❗
 
     ## ✅XI. subtitlu
 
