@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; //💫💫[COMUNICATING SCREENS]💫💫 also we need the 'useState' and also the 'useEffect' to not sent to many requests to the API
 import { View, Text, StyleSheet, FlatList, Image } from "react-native";
-import yelp from "../api/yelp";
+import yelp from "../api/yelp"; //💫💫[COMUNICATING SCREENS]💫💫 need it to take the 'id' from the Yelp API
 
 //🦟🦟[RELATED CONTENTS]🦟🦟
 const ResultsShowScreen = ({ route }) => {
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState(null); //💫💫[COMUNICATING SCREENS]💫💫 we need a default value of an Array, meaning an empty Array that will be filled when the User sent some request and the API will comunicate some 'result'
   const id = route.params.id; //💫💫[COMUNICATING SCREENS]💫💫
 
   const getResult = async (id) => {
@@ -13,11 +13,11 @@ const ResultsShowScreen = ({ route }) => {
   };
   useEffect(() => {
     getResult(id);
-  }, []);
+  }, []); //💫💫[COMUNICATING SCREENS]💫💫 sending only one resuest to the API and not to much to overflow the data flowing
 
   if (!result) {
     return null;
-  }
+  } //💫💫[COMUNICATING SCREENS]💫💫 return an empty Array if there are no results returned from the API
 
   return (
     <View>
