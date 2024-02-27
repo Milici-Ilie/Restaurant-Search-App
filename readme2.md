@@ -256,6 +256,7 @@
                                                                 ❗❗❗ 🍾🍾[SINGLE CONTENT]🍾🍾 ❗❗❗
 
     ## ✅IX. -How to display IMG's
+             -How to create the effect of sliding right at the end and coming back
 
 [SRC/COMPONENTS/ResultsDetail.js]/[]
 
