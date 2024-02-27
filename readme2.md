@@ -258,7 +258,10 @@
     ## ✅IX. -How to display IMG's
              -How to create the effect of sliding right at the end and coming back
 
-[SRC/COMPONENTS/ResultsDetail.js]/[]
+> How to hide the Scroll bar: 'showsHorizontalScrollIndicator={false}'
+> How to Scroll horizontall and vertically when there are to much content, check the 'SearchScreen.js'
+
+[SRC/COMPONENTS/ResultsDetail.js]/[SRC/SCREEN/SearchScreen.js]
 
                                                                 ❗❗❗ 🍧🍧[DISPLAYING IMAGES]🍧🍧 ❗❗❗
 

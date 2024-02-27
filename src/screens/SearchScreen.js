@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native"; //🍧🍧[DISPLAYING IMAGES]🍧🍧 we need to import the 'ScrollView'
 import SearchBar from "../components/SearchBar"; //🔍🔍[SEARCH BAR]🔍🔍 importing the SearchBar
 import useResults from "../hooks/useResults";
 import ResultsList from "../components/ResultsList"; //🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 importing the results from the API list
@@ -30,6 +30,7 @@ const SearchScreen = () => {
       {errorMessage ? <Text>{errorMessage}</Text> : null}
       {/* 🌋🌋[HANDLING ERRORS]🌋🌋 here we are implementing the Error message if is true or false  */}
       <ScrollView>
+        {/* 🍧🍧[DISPLAYING IMAGES]🍧🍧 here we need to wrap all our content inside <ScrollView>...here...</ScrollView> that must be scrooled if there is to much content --- NOTE ❗❗❗ on Android can be a problem with the Vertical scrooling, to solve that problem of the content that dont expand at maximum capacity we need to set those content to "style={{flex:1}}", this will strech the content on all the available space === BUT all of this can be simply replaced with empty fragments <>  ... </>, use the 'flex:1' only when is need it. */}
         {/* 🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 our <ResultsList/> 👇 here we are passing all the code that we need using the PROPS, check the code in the 'ResultList.js' */}
         <ResultsList
           results={filterResultsByPrice("$")}

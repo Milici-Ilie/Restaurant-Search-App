@@ -21,7 +21,7 @@ const ResultsList = ({ title, results }) => {
       <Text style={styles.title}>{title}</Text>
       <FlatList
         horizontal
-        showsHorizontalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false} // hiding the scrollbar
         data={results}
         keyExtractor={(result) => result.id}
         // the unique id, this 'id' is recevied from the API server wich is unique
