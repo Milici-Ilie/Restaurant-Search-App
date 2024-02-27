@@ -14,7 +14,7 @@ import ResultsDetail from "./ResultsDetail"; //🍾🍾[SINGLE CONTENT]🍾🍾 
 const ResultsList = ({ title, results }) => {
   const navigation = useNavigation();
   if (!results.length) {
-    return null;
+    return null; //💽💽[DISPLAYING ALL CONTENT]💽💽 here we are seying that if there are no 'results' received fom the API dont show any result at all
   }
 
   return (

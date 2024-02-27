@@ -287,7 +287,11 @@
 
                                                                 ❗❗❗ 💫💫[COMUNICATING SCREENS]💫💫 ❗❗❗
 
-    ## ✅XII. subtitlu
+    ## ✅XII. -How to display all the content at once and not the text first and than the IMG's, etc
+
+[SRC/COMPONENTS/ResultsList.js]/[]
+
+                                                                ❗❗❗ 💽💽[DISPLAYING ALL CONTENT]💽💽 ❗❗❗
 
     ## ✅XIII. subtitlu
 

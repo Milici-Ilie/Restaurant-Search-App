@@ -17,7 +17,7 @@ const ResultsShowScreen = ({ route }) => {
 
   if (!result) {
     return null;
-  } //💫💫[COMUNICATING SCREENS]💫💫 return an empty Array if there are no results returned from the API
+  } //💫💫[COMUNICATING SCREENS]💫💫 return an empty Array if there are no results returned from the API, also here we can set an Error message if we want
 
   return (
     <View>
@@ -30,7 +30,7 @@ const ResultsShowScreen = ({ route }) => {
         }}
       />
     </View>
-  );
+  ); //always use <FlatList/> when you want to display and Array of IMG's or any multiple contents that can be loaded as a List
 };
 
 const styles = StyleSheet.create({
