@@ -227,9 +227,23 @@
 
                                                                     ❗❗❗ 🌋🌋[HANDLING ERRORS]🌋🌋 ❗❗❗
 
-    ## ✅VI. subtitlu
+    ## ✅VI. -How to display some results to the User when he first open the App
+              -How to display content from the API by default when the Appp is oppened
 
-    ## ✅VII. subtitlu
+> 'useEffect' - is a HOOK that allows us to render a component just one time when our component is first displayed on the screen
+> useEffect(()=> {}, []); ---> Run the arrow function only when the component is first rendered
+> useEffect(()=> {}, [value]); ---> Run the arrow function only when the component is first rendered, and when the 'value' [] changes, this [value] can be a function or anything else, when this [value] will be activated will automatically call also the 'useEffect()' State
+
+[SRC/SCREENS/SearchScreen.js]/[SRC/HOOKS/useResults.js]
+
+                                                                ❗❗❗ ⛵⛵[DISPLAYING DEFAULT RESULTS]⛵⛵ ❗❗❗
+
+    ## ✅VII. -Displaying results from the API
+               -Displaying content
+
+[SRC/COMPONENTS/ResultsList.js]/[]
+
+                                                                ❗❗❗ 🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 ❗❗❗
 
     ## ✅VIII. subtitlu
 

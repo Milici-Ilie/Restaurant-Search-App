@@ -6,7 +6,8 @@ import ResultsList from "../components/ResultsList";
 
 const SearchScreen = () => {
   const [term, setTerm] = useState(""); //🔤🔤[RECEVEING DATA]🔤🔤 taking data from the Search Input Text
-  const [searchApi, results, errorMessage] = useResults(); //🔤🔤[RECEVEING DATA]🔤🔤 Receveing data from the Input Text
+  const [searchApi, results, errorMessage] = useResults(); //🔤🔤[RECEVEING DATA]🔤🔤 Receveing data from the Input Text === NOTE ❗❗❗ Note that here we called the 'useRescults' file an take the PROPS 'searchApi, results, errorMessage' that we exported in the 'useResults.js' to use them in this file ❗❗❗
+  // ⛵⛵[DISPLAYING DEFAULT RESULTS]⛵⛵ calling the PROP 'searchApi'
 
   const filterResultsByPrice = (price) => {
     // price === '$' || '$$' || '$$$'
@@ -21,6 +22,7 @@ const SearchScreen = () => {
         term={term}
         onTermChange={setTerm}
         onTermSubmit={() => searchApi(term)}
+        //⛵⛵[DISPLAYING DEFAULT RESULTS]⛵⛵ 'onTermSubmit={()=> searchApi(term)}', here we are setting the default content that must be displayed by default
         //🔤🔤[RECEVEING DATA]🔤🔤after the User hits the Enter Key this is how we submit the data/info;s of what he typed in, we also need to pass this State (onTermSubmit) as a Prop to 'SearchBar.js' for this to work
       />
       {/* 🔤🔤[RECEVEING DATA]🔤🔤 connecting the Search Bar with the data receveid from the Input Text --- ❗❗❗ Now we can pass those States 'term, onTermChange and onTermSubmit' as PROPS to our 'SearchBar.js' file */}
