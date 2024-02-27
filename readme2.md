@@ -40,6 +40,7 @@
 > Part 2: Create a component - a function that resturns some 'JSX'
 > Part 3: Create a stylesheet to style our component
 > Part 4: Export the component so we can use it elsewhere in our project
+> How to upgrade/update the Expo Cli. Terminal: 'npx expo install --fix' ==== 'npm install -g expo@^50.0.8'
 
 [SRC/SCREEN/ComponentsScreen.js]/[App.js]
 
@@ -240,14 +241,25 @@
 
     ## ✅VII. -Displaying results from the API
                -Displaying content
+               -How to create a Scroolable List in React Native, check the 'ResultsList.js' file for <FlatList.../>
 
-[SRC/COMPONENTS/ResultsList.js]/[]
+[SRC/COMPONENTS/ResultsList.js]/[SRC/SCREENS/SearchScreen.js]
 
                                                                 ❗❗❗ 🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 ❗❗❗
 
-    ## ✅VIII. subtitlu
+    ## ✅VIII. -Displaying only 1 one result
+                -How to show only 1 result from the API
+                -In some App of multiple Restaurants, we want to display at the Top only 1 restarurent/content
 
-    ## ✅IX. subtitlu
+[ResultsDetails.js]/[]
+
+                                                                ❗❗❗ 🍾🍾[SINGLE CONTENT]🍾🍾 ❗❗❗
+
+    ## ✅IX. -How to display IMG's
+
+[SRC/COMPONENTS/ResultsDetail.js]/[]
+
+                                                                ❗❗❗ 🍧🍧[DISPLAYING IMAGES]🍧🍧 ❗❗❗
 
     ## ✅X. subtitlu
 

@@ -7,8 +7,9 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import ResultsDetail from "./ResultsDetail";
+import ResultsDetail from "./ResultsDetail"; //🍾🍾[SINGLE CONTENT]🍾🍾 importing the results
 
+// 🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊
 const ResultsList = ({ title, results }) => {
   const navigation = useNavigation();
   if (!results.length) {
@@ -23,6 +24,7 @@ const ResultsList = ({ title, results }) => {
         showsHorizontalScrollIndicator={false}
         data={results}
         keyExtractor={(result) => result.id}
+        // the unique id, this 'id' is recevied from the API server wich is unique
         renderItem={({ item }) => {
           return (
             <TouchableOpacity
@@ -32,7 +34,7 @@ const ResultsList = ({ title, results }) => {
             >
               <ResultsDetail result={item} />
             </TouchableOpacity>
-          );
+          ); //🍾🍾[SINGLE CONTENT]🍾🍾 returning the <ResultsDetail/>
         }}
       />
     </View>

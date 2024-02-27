@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import SearchBar from "../components/SearchBar"; //🔍🔍[SEARCH BAR]🔍🔍 importing the SearchBar
 import useResults from "../hooks/useResults";
-import ResultsList from "../components/ResultsList";
+import ResultsList from "../components/ResultsList"; //🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 importing the results from the API list
 
 const SearchScreen = () => {
   const [term, setTerm] = useState(""); //🔤🔤[RECEVEING DATA]🔤🔤 taking data from the Search Input Text
@@ -12,9 +12,9 @@ const SearchScreen = () => {
   const filterResultsByPrice = (price) => {
     // price === '$' || '$$' || '$$$'
     return results.filter((result) => {
-      return result.price === price;
-    });
-  };
+      return result.price === price; //also note that we are 'filter'ing in all the 'results' that we get from the 'ResultsList.js' and separate the dollar symbols to create our lists
+    }); //🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 here we are grouping the restaurents depending on the 'price' that we get from the API, the API provides us price that result in dollar symbols, from cheaper to expensive $, $$ or exepensive $$$
+  }; //🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 we implement this function bellow 👇 in the <ResultsList .../>, there we are calling this function and include the term that distinguish data from another data 'filterResultsByPrice('$') or ('$$'), etc'
 
   return (
     <>
@@ -30,6 +30,7 @@ const SearchScreen = () => {
       {errorMessage ? <Text>{errorMessage}</Text> : null}
       {/* 🌋🌋[HANDLING ERRORS]🌋🌋 here we are implementing the Error message if is true or false  */}
       <ScrollView>
+        {/* 🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 our <ResultsList/> 👇 here we are passing all the code that we need using the PROPS, check the code in the 'ResultList.js' */}
         <ResultsList
           results={filterResultsByPrice("$")}
           title="Cost Effective"
