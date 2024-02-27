@@ -266,6 +266,7 @@
                                                                 ❗❗❗ 🍧🍧[DISPLAYING IMAGES]🍧🍧 ❗❗❗
 
     ## ✅X. -Reminder on Navigation
+             -UseNavigation
              -Navigating from a Child Component
              -How to display another page related when the User select some content
              -How to connect related info page with primary page
@@ -274,11 +275,17 @@
 
 > How to dettect what content the User pressed to know wich info's to upload when is need it
 
-[SRC/SCREENS/ResultsShowScreen.js]/[SRC/SCREENS/SearchScreen.js]/[SRC/COMPONENTS/ResultsList.js]
+[SRC/SCREENS/ResultsShowScreen.js]/[SRC/COMPONENTS/ResultsList.js]
 
                                                                 ❗❗❗ 🦟🦟[RELATED CONTENTS]🦟🦟 ❗❗❗
 
-    ## ✅XI. subtitlu
+    ## ✅XI. -Communicating between screens
+              -How to figure out what data to display when the user tapp on some content/IMG/etc
+              -Displaying the correct content
+
+[SRC/COMPONENTS/ResultsList.js]/[SRC/SCREENS/ResultsShowScreen.js]
+
+                                                                ❗❗❗ 💫💫[COMUNICATING SCREENS]💫💫 ❗❗❗
 
     ## ✅XII. subtitlu
 

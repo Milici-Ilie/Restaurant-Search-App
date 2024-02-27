@@ -5,11 +5,11 @@ import yelp from "../api/yelp";
 //🦟🦟[RELATED CONTENTS]🦟🦟
 const ResultsShowScreen = ({ route }) => {
   const [result, setResult] = useState(null);
-  const id = route.params.id;
+  const id = route.params.id; //💫💫[COMUNICATING SCREENS]💫💫
 
   const getResult = async (id) => {
     const response = await yelp.get(`/${id}`);
-    setResult(response.data);
+    setResult(response.data); //💫💫[COMUNICATING SCREENS]💫💫 getting the 'id' from the YELP API servers, note that this method of taking the 'id' can be different for others App's, because every API can have different 'id' method, links, etc
   };
   useEffect(() => {
     getResult(id);

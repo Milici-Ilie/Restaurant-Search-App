@@ -30,8 +30,9 @@ const ResultsList = ({ title, results }) => {
           return (
             //🦟🦟[RELATED CONTENTS]🦟🦟 here 👇 we need to wrap our content inside of it
             <TouchableOpacity
-              onPress={() =>
-                navigation.navigate("ResultsShow", { id: item.id })
+              onPress={
+                () => navigation.navigate("ResultsShow", { id: item.id })
+                //💫💫[COMUNICATING SCREENS]💫💫 taking the bussines 'id' and displaying the right content when the User pressed on some content
               } //here we are telling to the 'navigator' with what content to bound when is pressed, in our case is 'ResultsShow', this is the 'ResultsShowScreen.js' file, check the 'App.js' file to see the connection
             >
               <ResultsDetail result={item} />
